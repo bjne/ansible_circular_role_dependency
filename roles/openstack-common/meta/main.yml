@@ -1,0 +1,7 @@
+---
+allow_duplicates: true
+dependencies:
+- { role: "{{ project }}-etc",
+    module: bootstrap,
+    called_from_openstack_common: true
+  }

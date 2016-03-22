@@ -1,0 +1,1 @@
+- debug: msg="Create configuration in /opt/keystone/{{ module }}"

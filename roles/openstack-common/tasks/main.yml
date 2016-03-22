@@ -1,0 +1,8 @@
+- debug: msg="this task should run _after_ {{ project }}-etc"
+
+- debug: msg="I was hoping to be able to depend on {{ project }}-etc passing a variable to prevent recursion"
+
+- debug: msg="But this does not work"
+
+- set_fact:
+    called_from_openstack_common: false

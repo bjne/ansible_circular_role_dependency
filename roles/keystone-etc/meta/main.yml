@@ -1,0 +1,8 @@
+---
+allow_duplicates: true
+dependencies:
+- {
+    role: openstack-common,
+    project: keystone,
+    when: called_from_openstack_common | default(false) == true
+  }
